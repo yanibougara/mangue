@@ -1,0 +1,3 @@
+button {
+    @include button($color-white, $color-light-green, 61px, 256px, 10px, none);
+}

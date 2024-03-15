@@ -1,0 +1,26 @@
+@import "abstracts/_variables";
+@import "abstracts/_mixins";
+
+@import "base/_reset";
+@import "base/_typography";
+
+@import "layout/_header";
+@import "layout/_saladeSurMesure";
+@import "layout/_preparation";
+@import "layout/_menu";
+@import "layout/_ChezLesVertsChezLesBleus";
+@import "layout/_formulaire";
+@import "layout/_footer";
+@import "layout/_responsive";
+
+@import "components/_button";
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+}

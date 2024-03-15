@@ -1,0 +1,21 @@
+footer {
+    background-color: $color-light-green;
+    @include display-flex($justify: space-between);
+    flex-direction: row;
+    padding: 24px 48px;
+
+    img {
+        width: 200px;
+    }
+
+    h3 {
+        font-size: 27px;
+        color: $color-white;
+    }
+
+    p {
+        font-size: 18px;
+        color: $color-white;
+        text-align: center;
+    }
+}

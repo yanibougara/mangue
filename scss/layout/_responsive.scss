@@ -1,0 +1,272 @@
+$white: #ffffff;
+$green: #b2d234;
+$yellowGreen: rgba(178, 210, 52, 0.8);
+$blueGreen: rgba(96, 160, 216, 0.8);
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 840px;
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img.logo {
+                width: 162px;
+            }
+
+            ul {
+                display: flex;
+                gap: 17px;
+                align-items: center;
+                list-style: none;
+                padding-right: 0;
+                font-size: 17px;
+                flex-direction: column;
+                padding-top: 20px;
+
+                button {
+                    background-color: $white;
+                    color: $green;
+                    border-radius: 5px;
+                    height: 18px;
+                    width: 87px;
+                    border: none;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .middlePhrase {
+        top: 63%;
+
+        h1 {
+            font-size: 60px;
+            color: $white;
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            position: absolute;
+            top: 27%;
+            right: 24%;
+            font-size: 22px;
+        }
+    }
+
+    .saladeSurMesure {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        margin-left: 40px;
+
+        h2 {
+            font-size: 27px;
+            color: $green;
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 37px;
+            flex-direction: column;
+            gap: 40px;
+            position: absolute;
+
+            .salad-img {
+                opacity: 30%;
+            }
+        }
+    }
+
+    .preparation1 {
+        position: absolute;
+        top: 24px;
+        right: 0;
+        padding: 37px 68px 48px;
+        background-color: $yellowGreen;
+        width: 100vw;
+        height: 768px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 14px;
+
+        button {
+            background-color: $white;
+            color: $green;
+            border-radius: 10px;
+            height: 61px;
+            width: 101px;
+            border: none;
+        }
+
+        h2 {
+            color: $white;
+            text-align: center;
+            font-size: 40px;
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ChezLesVertsChezLesBleus {
+        .ChezLesVerts {
+            background-color: $yellowGreen;
+            height: 450px;
+            margin-left: -23px;
+        }
+
+        .ChezLesBleus {
+            background-color: $blueGreen;
+            height: 493px;
+            padding: 84px;
+            margin-left: -23px;
+        }
+
+        h2 {
+            color: $white;
+            font-size: 27px;
+            text-align: center;
+        }
+    }
+
+    .menu {
+        & .menu-bottom {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+
+            & .containercarte {
+                & .text {
+                    display: flex;
+                    justify-content: start;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+
+            & .partieDroite {
+                & h4 {
+                    font-size: 37px;
+                    transform: rotate(-9deg);
+                    font-style: italic;
+                }
+            }
+        }
+
+        & .menu-top {
+            h2 {
+                color: $green;
+                font-size: 31px;
+                text-align: center;
+            }
+        }
+    }
+
+    .formulaire {
+        grid-template-columns: 1fr;
+        padding: 37px;
+
+        & .form {
+            & h3 {
+                font-size: 35px;
+            }
+
+            & h5 {
+                font-size: 7px;
+            }
+
+            & form {
+                & .names {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
+
+                & label {
+                    color: $green;
+                    font-style: italic;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                & button {
+                    margin-top: 30px;
+                    margin-left: 30%;
+                }
+
+                & img {
+                    width: 492px;
+                    height: 400px;
+                    padding-left: 86px;
+                }
+            }
+        }
+    }
+    .formulaire__left {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .horizontal {
+            width: 200px;
+            height: 7px;
+        }
+
+        .vertical {
+            width: 7px;
+            height: 200px;
+        }
+    }
+    .formulaire .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+        opacity: 82%;
+        & .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 16px;
+            opacity: 82%;
+        }
+    }
+    .salad-img {
+        opacity: 20%;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 48px;
+        padding: 0;
+
+        .sld2-2 {
+            border: 2px solid #b2d234;
+            padding-right: 35px;
+        }
+    }
+}
+
+h3 {
+    font-size: 27px;
+    color: $green;
+    justify-content: center;
+    display: flex;
+}

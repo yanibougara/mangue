@@ -1,0 +1,105 @@
+header {
+    background-image: linear-gradient(
+            rgba(0, 0, 255, 0.5),
+            rgba(255, 255, 0, 0.5)
+        ),
+        url("images/Header.png");
+    background-size: cover;
+    opacity: 0.8;
+    padding: 10px;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img.logo {
+            width: 180px;
+        }
+
+        ul {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            list-style: none;
+            padding-right: 30px;
+
+            li > a {
+                color: $color-white;
+            }
+        }
+
+        button {
+            background-color: $color-white;
+            color: $color-light-green;
+            border-radius: 10px;
+            height: 39px;
+            width: 161px;
+            border: none;
+        }
+    }
+
+    ul {
+        li {
+            a {
+                position: relative;
+                &.Accueil {
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 10%;
+                        width: 75%;
+                        height: 2px;
+                        background-color: #e3dede;
+                        transform: scaleX(0);
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover {
+                        &:before {
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.middlePhrase {
+    position: relative;
+
+    h1 {
+        font-size: 126px;
+        color: $color-white;
+    }
+
+    h2 {
+        position: absolute;
+        top: 55%;
+        right: -10%;
+        font-size: 54px;
+        transform: rotate(-9deg);
+        color: $color-white;
+    }
+}
+
+.middlePhrase {
+    height: 271.27px;
+    width: 647.42px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.réseaux {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-top: 20px;
+}

@@ -1,0 +1,82 @@
+.menu {
+    @include display-flex();
+    gap: 48px;
+    padding: 32px 96px 48px 96px;
+
+    .menu-top {
+        width: 100%;
+        @include display-flex();
+
+        h2 {
+            color: $color-light-green;
+            font-size: 52px;
+            text-align: center;
+        }
+
+        p {
+            color: $color-grey;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+
+    .menu-bottom {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .containercarte {
+            width: 100%;
+            @include display-flex();
+
+            .text {
+                width: 100%;
+                @include display-flex($justify: start, $align: start);
+                gap: 8px;
+            }
+
+            .price {
+                color: $color-light-green;
+            }
+        }
+
+        .partieDroite {
+            width: 100%;
+            @include display-flex();
+            gap: 48px;
+
+            h4 {
+                font-size: 64px;
+                transform: rotate(-9deg);
+                font-style: italic;
+            }
+
+            .green-text {
+                color: $color-light-green;
+            }
+
+            .blue-text {
+                color: rgb(64, 109, 135);
+            }
+
+            p {
+                color: $color-grey;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            button {
+                padding: 16px 32px;
+                border: none;
+                border-radius: 10px;
+                background-color: $color-light-green;
+                color: $color-white;
+                font-size: 20px;
+            }
+        }
+    }
+    .sld2-2 {
+        border: 2px solid $color-light-green;
+        padding-right: 300px;
+    }
+}

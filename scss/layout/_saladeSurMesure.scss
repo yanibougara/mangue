@@ -1,0 +1,36 @@
+.saladeSurMesure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 2px;
+  height: 800px;
+  margin-left: 144px;
+
+    div {
+        @include display-flex($align: flex-start);
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    h2 {
+        font-size: 34px;
+        color: $color-light-green;
+    }
+
+    p {
+        font-size: 18px;
+        color: $color-grey;
+    }
+
+    button {
+        color: $color-white;
+        background-color: $color-light-green;
+        font-size: 24px;
+        height: 61px;
+        width: 256px;
+        border-radius: 10px;
+    }
+}
+
+
+
